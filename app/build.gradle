@@ -33,9 +33,3 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation project(path: ':oaid')
 }
-
-repositories {
-    flatDir {
-        dirs '../oaid/libs','libs'
-    }
-}
