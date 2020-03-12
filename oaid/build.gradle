@@ -25,16 +25,16 @@ android {
         }
     }
 
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
     sourceSets {
         main {
             jniLibs.srcDirs = ['libs']
         }
-    }
-}
-
-repositories {
-    flatDir {
-        dirs 'libs'
     }
 }
 
@@ -46,4 +46,5 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     api(name: 'miit_mdid_1.0.10', ext: 'aar')
+    implementation 'com.youth.banner:banner:2.0.0-alpha02'
 }
