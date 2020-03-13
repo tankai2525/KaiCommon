@@ -25,12 +25,6 @@ android {
         }
     }
 
-    repositories {
-        flatDir {
-            dirs 'libs'
-        }
-    }
-
     sourceSets {
         main {
             jniLibs.srcDirs = ['libs']
@@ -45,4 +39,5 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    api 'com.squareup.okhttp3:okhttp:3.8.1'
 }
