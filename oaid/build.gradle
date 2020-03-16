@@ -34,5 +34,5 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 //    compileOnly 'com.squareup.okhttp3:okhttp:3.8.1'
-    api "androidx.viewpager2:viewpager2:1.0.0"
+    implementation "androidx.viewpager2:viewpager2:1.0.0"
 }
